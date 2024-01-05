@@ -4,6 +4,7 @@ on:
     # 매 주 일요일 오전 7시, Github Actions 에서는 UTC 기준으로 실행됨
     # https://elmah.io/tools/cron-parser/
     - cron: '0 22 * * 6'
+  workflow_dispatch:  # This line is added for manual trigger
 jobs:
   run-actions:
     runs-on: ubuntu-latest
